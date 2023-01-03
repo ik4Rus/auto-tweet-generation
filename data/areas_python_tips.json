@@ -150,5 +150,28 @@
   {
     "count": 10,
     "area": "Working with distributed task queues such as Celery or RQ"
+  },
+  {
+    "count": 3,
+    "area": "The difference between shallow and deep copying of python objects"
+  },
+  {
+    "count": 3,
+    "area": "Leverage operator overloading"
+  },
+  {
+    "count": 3,
+    "area": "Use @staticmethod and @classmethod"
+  },
+  {
+    "count": 3,
+    "area": "Use inheritance and encapsulation"
   }
 ]
+
+
+
+
+
+
+

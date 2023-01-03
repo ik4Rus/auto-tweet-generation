@@ -16,43 +16,18 @@ import json
 MAX_TOKENS = 300
 openai.api_key = os.getenv("OPENAI_KEY")
 
-with open('../data/areas_python_tips.json') as f:
-    python_tip_areas = json.load(f)
+with open('../data/python_tips_base.json') as f:
+    python_base_tips = json.load(f)
 
-final_tips_list = []
-
-for area in python_tip_areas[:2]:
-    print(f"Generating tips for '{area.get('area')}'")
-    area_prompt = \
-        f"Generate a list of {area.get('count')} advanced Python tips and tricks for the area '{area.get('area')}'. " \
-        f"Each tip or trick should be a short sentence, advanced, very specific and they need to be mutually exclusive."
-
-    response = openai.Completion.create(
-        model="text-davinci-003",
-        prompt=area_prompt,
-        temperature=0.7,
-        max_tokens=MAX_TOKENS,
-        top_p=1,
-        frequency_penalty=0,
-        presence_penalty=0
-    )
-    tips = response.choices[0].text
-
-    # Split the tips into a list
-    tips_list = tips.split('\n')
-    tips_list = [re.sub(r'^[0-9]*\.*', '', tip).strip() for tip in tips_list if tip != '']
-
-    final_tips_list = final_tips_list + [{"tip": tip, "area": area.get('area')} for tip in tips_list]
-
-for idx, tip in enumerate(final_tips_list):
-    print(f"{idx + 1} of {len(final_tips_list)}")
+for idx, tip in enumerate(python_base_tips):
+    print(f"{idx + 1} of {len(python_base_tips)}")
     tweet_prompt = f'''
     I write daily tweets for advanced Python tips and tricks. I follow these three principles: 
     - I use hashtags and never use more than 280 characters
     - I'm specific and try to visualize the content so it is easy to learn
     - I am engaging and interesting
     
-    A tweet for the following tip: 'tip.get('tip')'
+    A tweet for the following tip: '{tip.get('tip')}'
     '''
 
     response = openai.Completion.create(
@@ -64,7 +39,8 @@ for idx, tip in enumerate(final_tips_list):
         frequency_penalty=0,
         presence_penalty=0
     )
-    tips = response.choices[0].text
+    tip = response.choices[0].text
+
     ipdb.set_trace()
     # Split the tips into a list
     tips_list = tips.split('\n')
