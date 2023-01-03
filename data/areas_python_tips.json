@@ -1,0 +1,154 @@
+[
+  {
+    "count": 10,
+    "area": "Decorators for modifying functions and methods"
+  },
+  {
+    "count": 5,
+    "area": "Generators and generator expressions for generating sequences of data"
+  },
+  {
+    "count": 5,
+    "area": "Async/await syntax for asynchronously executing code"
+  },
+  {
+    "count": 5,
+    "area": "Context managers for managing resources"
+  },
+  {
+    "count": 10,
+    "area": "Metaclasses for creating custom classes"
+  },
+  {
+    "count": 5,
+    "area": "Type hints and static type checkers"
+  },
+  {
+    "count": 10,
+    "area": "Profiling and optimizing code performance"
+  },
+  {
+    "count": 5,
+    "area": "Threads, processes, and asyncio for concurrent execution"
+  },
+  {
+    "count": 5,
+    "area": "Sockets and other network protocols for creating client-server applications"
+  },
+  {
+    "count": 5,
+    "area": "Interacting with the filesystem for reading and writing files"
+  },
+  {
+    "count": 3,
+    "area": "Shell commands and interacting with the operating system"
+  },
+  {
+    "count": 10,
+    "area": "Regular expressions for matching and manipulating strings"
+  },
+  {
+    "count": 5,
+    "area": "Working with dates and times"
+  },
+  {
+    "count": 3,
+    "area": "Serializing and deserializing data"
+  },
+  {
+    "count": 15,
+    "area": "Unittest library and test-driven development"
+  },
+  {
+    "count": 10,
+    "area": "Coding best practices for better readability"
+  },
+  {
+    "count": 15,
+    "area": "Debugging and troubleshooting"
+  },
+  {
+    "count": 15,
+    "area": "Object-oriented programming concepts"
+  },
+  {
+    "count": 10,
+    "area": "Advanced data structures"
+  },
+  {
+    "count": 10,
+    "area": "Advanced function features"
+  },
+  {
+    "count": 10,
+    "area": "Advanced class features"
+  },
+  {
+    "count": 5,
+    "area": "Advanced string formatting"
+  },
+  {
+    "count": 10,
+    "area": "Advanced exception handling"
+  },
+  {
+    "count": 5,
+    "area": "Advanced module and package features"
+  },
+  {
+    "count": 5,
+    "area": "Advanced collections module features"
+  },
+  {
+    "count": 5,
+    "area": "Advanced itertools module features"
+  },
+  {
+    "count": 5,
+    "area": "Advanced operator module features"
+  },
+  {
+    "count": 5,
+    "area": "Binary data and the struct module"
+  },
+  {
+    "count": 5,
+    "area": "Lazy evaluation with the yield keyword"
+  },
+  {
+    "count": 5,
+    "area": "Magic methods for dynamic attribute access, custom indexing, slicing, length, and boolean"
+  },
+  {
+    "count": 3,
+    "area": "Custom string formatting with __format__"
+  },
+  {
+    "count": 3,
+    "area": "Custom behavior for issubclass with __subclasshook__"
+  },
+  {
+    "count": 5,
+    "area": "Iterator protocol with __iter__ and __next__"
+  },
+  {
+    "count": 5,
+    "area": "Context manager protocol with __enter__ and __exit__"
+  },
+  {
+    "count": 5,
+    "area": "Use Cython"
+  },
+  {
+    "count": 3,
+    "area": "Packaging code with setuptools"
+  },
+  {
+    "count": 10,
+    "area": "Working with version control systems such as Git and Mercurial"
+  },
+  {
+    "count": 10,
+    "area": "Working with distributed task queues such as Celery or RQ"
+  }
+]
